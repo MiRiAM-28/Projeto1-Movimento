@@ -500,6 +500,45 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &524109545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524109542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6360a893da12c9c41a4f601c036930f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionName: Get Patient
+  cost: 1
+  target: {fileID: 1000317771}
+  targetTag: 
+  duration: 0
+  preConditions:
+  - key: Waiting
+    value: 1
+  afterEffects:
+  - key: treatPatient
+    value: 1
+  agent: {fileID: 0}
+  running: 0
+--- !u!114 &524109546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 524109542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 785cb4f492cf48e4880dbdc37495cbba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actions: []
+  currentAction: {fileID: 0}
 --- !u!1 &658721723
 GameObject:
   m_ObjectHideFlags: 0
@@ -3534,6 +3573,7 @@ GameObject:
   - component: {fileID: 1592830987}
   - component: {fileID: 1592830990}
   - component: {fileID: 1592830989}
+  - component: {fileID: 1592830991}
   m_Layer: 5
   m_Name: WorldStates
   m_TagString: Untagged
@@ -3603,6 +3643,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1592830986}
   m_CullTransparentMesh: 0
+--- !u!114 &1592830991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592830986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04afae35000be8c4aa22beb22da186fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  states: {fileID: 1592830989}
 --- !u!1 &1631393777
 GameObject:
   m_ObjectHideFlags: 0
@@ -3642,7 +3695,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631393777}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.39, y: 0.01, z: -48.98}
+  m_LocalPosition: {x: -48.36, y: 0.01, z: -55.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4330,10 +4383,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 791742307, guid: 1fe305f0278bdbf4cba46b3de284dcc6, type: 3}
+      propertyPath: preConditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 791742307, guid: 1fe305f0278bdbf4cba46b3de284dcc6, type: 3}
+      propertyPath: preConditions.Array.data[0].key
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 791742307, guid: 1fe305f0278bdbf4cba46b3de284dcc6, type: 3}
+      propertyPath: preConditions.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 791742310, guid: 1fe305f0278bdbf4cba46b3de284dcc6, type: 3}
+      propertyPath: afterEffects.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 791742311, guid: 1fe305f0278bdbf4cba46b3de284dcc6, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1249534195}
+    - target: {fileID: 791742311, guid: 1fe305f0278bdbf4cba46b3de284dcc6, type: 3}
+      propertyPath: afterEffects.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3988945197914256995, guid: 1fe305f0278bdbf4cba46b3de284dcc6, type: 3}
       propertyPath: m_RootOrder
       value: 1

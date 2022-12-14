@@ -7,13 +7,85 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 179875350499298290, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
+      propertyPath: duration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 179875350499298290, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
+      propertyPath: targetTag
+      value: Reception
+      objectReference: {fileID: 0}
+    - target: {fileID: 179875350499298290, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
+      propertyPath: actionName
+      value: Register
+      objectReference: {fileID: 0}
+    - target: {fileID: 179875350499298290, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
+      propertyPath: afterEffects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 179875350499298290, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
+      propertyPath: preConditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 179875350499298290, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
+      propertyPath: afterEffects.Array.data[0].key
+      value: hasRegistered
+      objectReference: {fileID: 0}
+    - target: {fileID: 179875350499298290, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
+      propertyPath: preConditions.Array.data[0].key
+      value: hasArrived
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350256900591713423, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
+      propertyPath: duration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350256900591713423, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
+      propertyPath: targetTag
+      value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350256900591713423, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
+      propertyPath: afterEffects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350256900591713423, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
+      propertyPath: afterEffects.Array.data[0].key
+      value: hasArrived
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350256900591713423, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
+      propertyPath: afterEffects.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846574598723957031, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
+      propertyPath: targetTag
+      value: WaitingArea
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846574598723957031, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
+      propertyPath: afterEffects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846574598723957031, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
+      propertyPath: preConditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846574598723957031, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
+      propertyPath: afterEffects.Array.data[0].key
+      value: isWaiting
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846574598723957031, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
+      propertyPath: preConditions.Array.data[0].key
+      value: hasRegistered
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846574598723957031, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
+      propertyPath: afterEffects.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7880970886039044016, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7880970886039044016, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.07676
+      value: -25.5
       objectReference: {fileID: 0}
     - target: {fileID: 7880970886039044016, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -21,7 +93,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7880970886039044016, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -46.53
+      value: -48.37
       objectReference: {fileID: 0}
     - target: {fileID: 7880970886039044016, guid: d36c43225f9391e4c8810c98eb7ef85e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -84,90 +156,3 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &791742308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3991469197403110391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5375c00027eb8464cbba6a7f6151e4fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actions: []
-  currentAction: {fileID: 0}
---- !u!114 &791742307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3991469197403110391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c79e2e5f5920184597326c5d09aed05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actionName: Go To Hospital
-  cost: 1
-  target: {fileID: 0}
-  targetTag: Door
-  duration: 2
-  preConditions: []
-  afterEffects:
-  - key: hasArrived
-    value: 1
-  agent: {fileID: 0}
-  running: 0
---- !u!114 &791742310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3991469197403110391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f82df2a51bc46742b0d2bebc48960ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actionName: Go To Waiting Room
-  cost: 1
-  target: {fileID: 0}
-  targetTag: WaitingArea
-  duration: 0
-  preConditions:
-  - key: hasRegistered
-    value: 0
-  afterEffects:
-  - key: isWaiting
-    value: 0
-  agent: {fileID: 0}
-  running: 0
---- !u!114 &791742311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3991469197403110391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 259bb90fbb5b0da4d8b6c8c2e96d726f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actionName: Register
-  cost: 1
-  target: {fileID: 0}
-  targetTag: Reception
-  duration: 5
-  preConditions:
-  - key: hasArrived
-    value: 0
-  afterEffects:
-  - key: hasRegistered
-    value: 0
-  agent: {fileID: 0}
-  running: 0
